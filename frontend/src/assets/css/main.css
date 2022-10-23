@@ -1,0 +1,33 @@
+
+
+body {
+    background-color: #011;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.gm-nav-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.gm-nav-link:hover {
+    color: #999;
+}
+
+.gm-nav-link-text {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+
+}
+
+.gm-nav-link-icon {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
