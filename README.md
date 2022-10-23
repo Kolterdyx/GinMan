@@ -16,7 +16,16 @@ The frontend is written in Vue.js and uses Bootstrap as a CSS framework.
 
 ## Installation
 
+Clone the repository and follow the instructions below.
+
+### Backend installation
+
 (Soon)
+
+### Frontend installation
+
+See the [frontend README](frontend/README.md) for instructions on how to install the frontend.
+
 
 ## Usage
 
