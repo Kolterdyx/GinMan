@@ -4,8 +4,8 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Brand -->
-      <a class="navbar-brand" href="/frontend/public">
-<!--        <img height="50" src="../../src/assets/logo_text.svg" alt="GinMan logo"/>-->
+      <a class="navbar-brand" href="/">
+        <img height="50" src="./assets/logo.svg" alt="GinMan logo"/>
       </a>
     </div>
     <!-- Container wrapper -->
