@@ -1,6 +1,6 @@
 <template>
 
-  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark gm-bg-primary fixed-top">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Brand -->
@@ -10,15 +10,16 @@
     </div>
     <!-- Container wrapper -->
   </nav>
-  <nav id="sidebarMenu" class="sidebar bg-dark">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <NavbarItem link="/dashboard" text="Dashboard" icon="bi-speedometer2"></NavbarItem>
-        <NavbarItem link="/monitoring" text="Monitoring" icon="bi-activity"></NavbarItem>
-        <NavbarItem link="/settings" text="Settings" icon="bi-gear"></NavbarItem>
+
+  <div id="sidebarWrapper" class="gm-bg-dark">
+    <b-sidebar id="sidebarMenu" title="Sidebar" shadow>
+      <div class="px-3 py-2">
+        <NavbarItem link="/dashboard" text="Dashboard" icon="BIconSpeedometer2"></NavbarItem>
+        <NavbarItem link="/monitoring" text="Monitoring" icon="BIconActivity"></NavbarItem>
+        <NavbarItem link="/settings" text="Settings" icon="BIconGear"></NavbarItem>
       </div>
-    </div>
-  </nav>
+    </b-sidebar>
+  </div>
 
   <main>
     <div class="container pt-4">
@@ -29,7 +30,7 @@
 
 <script>
 
-import NavbarItem from "./components/NavbarItem";
+import NavbarItem from "@/components/NavbarItem";
 
 export default {
   name: 'App',
@@ -39,19 +40,28 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-@import 'assets/css/main.css';
+@import "@/assets/css/main.css";
 
 #sidebarMenu {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+}
+
+#sidebarMenu .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+#sidebarWrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  padding: 76px 0 0;
   width: 240px;
   z-index: 600;
+
 }
 
 main {
@@ -59,10 +69,5 @@ main {
   padding-left: 240px;
 }
 
-
-#sidebarMenu .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
 
 </style>
