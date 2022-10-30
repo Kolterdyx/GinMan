@@ -1,0 +1,13 @@
+
+:root {
+    --gm-primary-color: #2b343f;
+    --gm-dark: #252129;
+}
+
+.gm-bg-dark {
+    background-color: var(--gm-dark) !important;
+}
+
+.gm-bg-primary {
+    background-color: var(--gm-primary-color) !important;
+}
