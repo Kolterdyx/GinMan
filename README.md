@@ -1,6 +1,6 @@
 # GinMan
 
-GinMan is a custom service manager I've built for managing and monitoring services on my servers.
+GinMan is a custom service manager I am building for managing and monitoring services on my servers.
 
 ## Features
 
